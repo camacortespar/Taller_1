@@ -14,7 +14,7 @@ void punto_2(){
   // Make some canvas 800x600
   TCanvas *canvas = new TCanvas("Canvas","Plot 2",800,600);
   // Make a 2D histogram
-  TH2F *hist_npvmu = new TH2F("#mu_{ave}-NPV","Plot 2: 2D Histogram Numbers of events vs. #mu_{average} and NPV; NPV ; #mu_{average}; Events ",50,1,50,50,1,100);
+  TH2F *hist_npvmu = new TH2F("#mu_{ave}-NPV","Plot 2: 2D Histogram Number of events vs. #mu_{average} and NPV; NPV ; #mu_{average}; Events ",50,1,50,50,1,100);
   
   int nentries, nbytes, i;
   nentries = (Int_t)tree->GetEntries();
