@@ -1,0 +1,29 @@
+5. Interpret the meaning of each variable.
+
+-p_{T}: Corresponde al momento transverso, es decir, el momento lineal de la partícula que deja el track (por si misma o extrapolado) sobre el plano xy ortogonal al
+eje z (el eje de colisión). Se observa que en "track_pt" solo se obtienen valores de p_{T}>500 MeV. En cambio, en la medición de "cluster_pt" el histograma presenta una 
+forma gaussiana, partiendo desde p_{T}=0, probablemente debido a la pérdida de energía que han sufrido las partículas al cruzar por los calorímetros.
+
+-eta: Se conoce como pseudo rapidez y está en función del ángulo acimutal \theta según \theta=-ln(tan(\theta/2)). Al observar el rango que eta tiene en el histograma
+"track_eta" (-2,5<\eta<2,5) se puede reconocer que que se trata de la ubicación de las partículas en el tracker. En cambio, en el histograma para "cluster_eta"
+se tiene que -5<\eta<5, correspondiendo a la ubicación en los calorímetros EM y hadrónico.
+ 
+-phi: Es el ángulo sobre el plano transverso al detector que determina la ubicación de la partícula. Mediante comparación entre los plot "track_phi" y "cluster_phi"
+se observa que en el segundo histograma se han disminuido los eventos en el mismo rango de \phi, podría entenderse como alguna pérdida de eventos mediante 
+entrega de energía a los calorímetros.
+
+-m: Entendiendo esta variable como la masa invariante del track para dado vértice en el tracker ("track_m") y del track en los calorímetros ("cluster_m"), se encuentra
+que en el tracker se mide una masa aproximadamente de m=139.5 MeV, mientras que en los calorímetros de la medición es de una masa aproximadamente de m=0 MeV. Al revisar
+el histograma "particles_m" también hay eventos que sitúan tracks con masas aproximadas de m=500 MeV, 920 MeV, 1100 MeV, 1200 MeV. Al revisar los valores que el histograma
+"particles_pdgID" presenta y considerando los ID = 22 e ID = 130 se puede hablar de posible detección de fotones (ID=22, m=0MeV) y quizá de kaones K^{0}_{L} (ID=130, m=497 MeV).
+
+-vtx: En un histograma Eventos vs. VTX, se puede entender esta variable como la cantidad de vértices (eventos) de los que se desprenden "n" tracks, por lo mismo, es una
+variable medida únicamente en el tracker. 
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+6. What is "Particle PDG ID"?
+
+Es una variable que siguiendo el esquema determinado por el Particle Data Group (PDG) le asigna un único código a cada tipo de partícula. En este sentido, el ID
+es un identificador único de las partículas. También vale la pena mencionar que, los valores negativos de PDGID son asignados a las antipartículas y los valores
+positivos de PDGID corresonden a partículas.
